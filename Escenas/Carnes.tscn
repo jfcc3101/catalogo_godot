@@ -1,0 +1,334 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Fuentes/PressStart2P-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_res.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_res_pressed.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_cerdo_pressed.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_cerdo.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_pollo.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_pollo_pressed.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_embutidos_pressed.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_embutidos.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/logo_back.png" type="Texture" id=10]
+[ext_resource path="res://Scripts/Carnes.gd" type="Script" id=11]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/fotos/res_molida.jpg" type="Texture" id=12]
+[ext_resource path="res://Sprites/logo_fw.png" type="Texture" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.396078, 0.396078, 0.396078, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=6]
+size = 25
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.596078, 0.631373, 1, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 5
+shadow_offset = Vector2( 5, 5 )
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=12]
+draw_center = false
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.396078, 0.396078, 0.396078, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Carnes" type="Node2D"]
+script = ExtResource( 11 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 576.0
+margin_bottom = 1024.0
+color = Color( 0.964706, 0.270588, 0.270588, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 86.5
+margin_top = 120.0
+margin_right = 489.5
+margin_bottom = 160.0
+custom_constants/separation = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 403.0
+margin_bottom = 50.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CARNES"
+align = 1
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 65.0
+margin_right = 403.0
+margin_bottom = 95.0
+custom_constants/separation = 30
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+margin_top = 110.0
+margin_right = 403.0
+margin_bottom = 660.0
+rect_min_size = Vector2( 0, 550 )
+size_flags_vertical = 3
+scroll_horizontal_enabled = false
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer"]
+margin_right = 388.0
+margin_bottom = 388.0
+columns = 2
+
+[node name="BotonRes" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonRes"]
+margin_right = 40.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "RES"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonCerdo" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 4 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonCerdo"]
+margin_right = 40.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "CERDO"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonPollo" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_top = 196.0
+margin_right = 192.0
+margin_bottom = 388.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonPollo"]
+margin_right = 40.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "POLLO"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonEmbutidos" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_left = 196.0
+margin_top = 196.0
+margin_right = 388.0
+margin_bottom = 388.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 8 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonEmbutidos"]
+margin_right = 40.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "EMBUTIDOS"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonVolver" type="Button" parent="VBoxContainer"]
+margin_top = 675.0
+margin_right = 403.0
+margin_bottom = 739.0
+rect_min_size = Vector2( 0, 64 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
+text = "VOLVER"
+icon = ExtResource( 10 )
+
+[node name="Muestra" type="WindowDialog" parent="."]
+margin_left = 43.0
+margin_top = 120.0
+margin_right = 543.0
+margin_bottom = 820.0
+rect_min_size = Vector2( 500, 800 )
+custom_styles/panel = SubResource( 7 )
+custom_fonts/title_font = SubResource( 8 )
+popup_exclusive = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Muestra"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 3.05176e-05
+margin_bottom = 6.10352e-05
+rect_min_size = Vector2( 500, 800 )
+rect_clip_content = true
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="Muestra/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 500.0
+margin_bottom = 30.0
+custom_constants/separation = 30
+
+[node name="Label" type="Label" parent="Muestra/VBoxContainer"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 34.0
+margin_right = 500.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 9 )
+text = "VARIANTE"
+align = 1
+uppercase = true
+
+[node name="HSeparator2" type="HSeparator" parent="Muestra/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 58.0
+margin_right = 500.0
+margin_bottom = 88.0
+custom_constants/separation = 30
+
+[node name="TextureRect" type="TextureRect" parent="Muestra/VBoxContainer"]
+margin_top = 92.0
+margin_right = 500.0
+margin_bottom = 592.0
+rect_min_size = Vector2( 500, 500 )
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Muestra/VBoxContainer"]
+margin_top = 596.0
+margin_right = 500.0
+margin_bottom = 724.0
+
+[node name="VSeparator" type="VSeparator" parent="Muestra/VBoxContainer/HBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 30.0
+margin_bottom = 128.0
+custom_constants/separation = 30
+
+[node name="BotonAnterior" type="Button" parent="Muestra/VBoxContainer/HBoxContainer"]
+margin_left = 34.0
+margin_right = 162.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 128, 128 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/disabled = SubResource( 12 )
+custom_styles/normal = SubResource( 10 )
+disabled = true
+icon = ExtResource( 10 )
+expand_icon = true
+
+[node name="VSeparator2" type="VSeparator" parent="Muestra/VBoxContainer/HBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 166.0
+margin_right = 341.0
+margin_bottom = 128.0
+custom_constants/separation = 175
+
+[node name="BotonSiguiente" type="Button" parent="Muestra/VBoxContainer/HBoxContainer"]
+margin_left = 345.0
+margin_right = 473.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 128, 128 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/disabled = SubResource( 12 )
+custom_styles/normal = SubResource( 10 )
+disabled = true
+icon = ExtResource( 13 )
+expand_icon = true
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonRes" to="." method="_on_BotonRes_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonCerdo" to="." method="_on_BotonCerdo_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonPollo" to="." method="_on_BotonPollo_button_up"]
+[connection signal="button_up" from="VBoxContainer/BotonVolver" to="." method="_on_BotonVolver_button_up"]
+[connection signal="button_up" from="Muestra/VBoxContainer/HBoxContainer/BotonAnterior" to="." method="_on_BotonAnterior_button_up"]
+[connection signal="button_up" from="Muestra/VBoxContainer/HBoxContainer/BotonSiguiente" to="." method="_on_BotonSiguiente_button_up"]

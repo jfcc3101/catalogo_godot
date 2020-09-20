@@ -18,6 +18,11 @@ _global_script_class_icons={
 config/name="Catalogo"
 run/main_scene="res://Escenas/MainScreen.tscn"
 config/icon="res://icon.png"
+config/quit_on_go_back=false
+
+[autoload]
+
+Global="*res://Scripts/Global.gd"
 
 [display]
 
