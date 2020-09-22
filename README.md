@@ -8,7 +8,7 @@ _Este proyecto se desarrolla enfocado en la funcionalidad para dispositivos móv
 
 ## Construido con 🛠
 
-* [Godot Engine] (https://godotengine.org/download/windows) Motor de juego usado en su última versión a la fecha 3.2.3
+* [Godot Engine](https://godotengine.org/download/windows) Motor de juego usado en su última versión a la fecha 3.2.3
 
 ## Exportación a Android 📱
 
@@ -21,3 +21,6 @@ _Este es un proyecto personal y no tiene ningún fin comercial._
 ## Captura de pantalla de la aplicación
 
 ![pantalla principal](Screenshots/Main.png)
+![pantalla1](Screenshots/Pantalla1.png)
+![pantalla2](Screenshots/Pantalla2.png)
+![pantalla3](Screenshots/Pantalla3.png)
