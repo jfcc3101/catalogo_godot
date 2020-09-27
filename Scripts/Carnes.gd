@@ -31,6 +31,8 @@ func buscar_variantes():
 		imagenes.append(Global.dict_imagenes[i])
 	if variantes.size() > 1:
 		$Muestra/VBoxContainer/HBoxContainer/BotonSiguiente.disabled = false
+	else:
+		$Muestra/VBoxContainer/HBoxContainer/BotonSiguiente.disabled = true
 		
 func fw_imagen():
 	img_actual +=1

@@ -1,0 +1,565 @@
+[gd_scene load_steps=44 format=2]
+
+[ext_resource path="res://Fuentes/PressStart2P-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_habichuela.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_coles.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_alverja.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_calabazas.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_habichuela_pressed.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_alverja_pressed.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_cebollas.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_coles_pressed.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/logo_back.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_pimenton.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/fotos/res_molida.jpg" type="Texture" id=12]
+[ext_resource path="res://Sprites/logo_fw.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_calabazas_pressed.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_pimenton_pressed.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_cebollas_pressed.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_tomate_pressed.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_tomate.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_pepino.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_pepino_pressed.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_hojas.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_hojas_pressed.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_maiz_pressed.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_maiz.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_champinon_pressed.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_champinon.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_guatila_pressed.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_guatila.png" type="Texture" id=28]
+[ext_resource path="res://Scripts/Verduras.gd" type="Script" id=29]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_berengena_pressed.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_berengena.png" type="Texture" id=31]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.396078, 0.396078, 0.396078, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=6]
+size = 25
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.596078, 0.631373, 1, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 5
+shadow_offset = Vector2( 5, 5 )
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=11]
+draw_center = false
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.396078, 0.396078, 0.396078, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Verduras" type="Node2D"]
+script = ExtResource( 29 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 576.0
+margin_bottom = 1024.0
+color = Color( 0.964706, 0.270588, 0.270588, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 86.5
+margin_top = 120.0
+margin_right = 489.5
+margin_bottom = 160.0
+custom_constants/separation = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 403.0
+margin_bottom = 50.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "VERDURAS"
+align = 1
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 65.0
+margin_right = 403.0
+margin_bottom = 95.0
+custom_constants/separation = 30
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+margin_top = 110.0
+margin_right = 403.0
+margin_bottom = 660.0
+rect_min_size = Vector2( 0, 550 )
+size_flags_vertical = 3
+scroll_horizontal_enabled = false
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer"]
+margin_right = 388.0
+margin_bottom = 1368.0
+columns = 2
+
+[node name="BotonHabichuela" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 6 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonHabichuela"]
+margin_right = 40.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "HABICHUELA"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonAlverja" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonAlverja"]
+margin_right = 40.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "ALVERJA"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonCalabazas" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_top = 196.0
+margin_right = 192.0
+margin_bottom = 388.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 14 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonCalabazas"]
+margin_right = 40.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "CALABAZAS"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonCebolla" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_left = 196.0
+margin_top = 196.0
+margin_right = 388.0
+margin_bottom = 388.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 16 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonCebolla"]
+margin_right = 40.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "CEBOLLA"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonColes" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_top = 392.0
+margin_right = 192.0
+margin_bottom = 584.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 9 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonColes"]
+margin_right = 192.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "Coles"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonPimenton" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_left = 196.0
+margin_top = 392.0
+margin_right = 388.0
+margin_bottom = 584.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 15 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonPimenton"]
+margin_right = 192.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "Pimentón"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonTomate" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_top = 588.0
+margin_right = 192.0
+margin_bottom = 780.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 18 )
+texture_pressed = ExtResource( 17 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonTomate"]
+margin_right = 192.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "Tomate"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonPepinos" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_left = 196.0
+margin_top = 588.0
+margin_right = 388.0
+margin_bottom = 780.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 19 )
+texture_pressed = ExtResource( 20 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonPepinos"]
+margin_right = 192.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "Pepinos"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonHojas" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_top = 784.0
+margin_right = 192.0
+margin_bottom = 976.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 21 )
+texture_pressed = ExtResource( 22 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonHojas"]
+margin_right = 192.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "Hojas"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonMaiz" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_left = 196.0
+margin_top = 784.0
+margin_right = 388.0
+margin_bottom = 976.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 24 )
+texture_pressed = ExtResource( 23 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonMaiz"]
+margin_right = 192.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "Maíz"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonChampis" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_top = 980.0
+margin_right = 192.0
+margin_bottom = 1172.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 26 )
+texture_pressed = ExtResource( 25 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonChampis"]
+margin_right = 192.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "Champiñón"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonGuatila" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_left = 196.0
+margin_top = 980.0
+margin_right = 388.0
+margin_bottom = 1172.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 28 )
+texture_pressed = ExtResource( 27 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonGuatila"]
+margin_right = 192.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "Guatila"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonBerengena" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+margin_top = 1176.0
+margin_right = 192.0
+margin_bottom = 1368.0
+rect_min_size = Vector2( 192, 192 )
+texture_normal = ExtResource( 31 )
+texture_pressed = ExtResource( 30 )
+expand = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonBerengena"]
+margin_right = 192.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 192, 0 )
+custom_fonts/font = SubResource( 2 )
+text = "BERENGENA"
+align = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotonVolver" type="Button" parent="VBoxContainer"]
+margin_top = 675.0
+margin_right = 403.0
+margin_bottom = 739.0
+rect_min_size = Vector2( 0, 64 )
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
+text = "VOLVER"
+icon = ExtResource( 10 )
+
+[node name="Muestra" type="WindowDialog" parent="."]
+margin_left = 43.0
+margin_top = 120.0
+margin_right = 543.0
+margin_bottom = 820.0
+rect_min_size = Vector2( 500, 800 )
+custom_styles/panel = SubResource( 7 )
+custom_fonts/title_font = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Muestra"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 3.05176e-05
+margin_bottom = 6.10352e-05
+rect_min_size = Vector2( 500, 800 )
+rect_clip_content = true
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="Muestra/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 500.0
+margin_bottom = 30.0
+custom_constants/separation = 30
+
+[node name="Label" type="Label" parent="Muestra/VBoxContainer"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 34.0
+margin_right = 500.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 9 )
+text = "VARIANTE"
+align = 1
+uppercase = true
+
+[node name="HSeparator2" type="HSeparator" parent="Muestra/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 58.0
+margin_right = 500.0
+margin_bottom = 88.0
+custom_constants/separation = 30
+
+[node name="TextureRect" type="TextureRect" parent="Muestra/VBoxContainer"]
+margin_top = 92.0
+margin_right = 500.0
+margin_bottom = 592.0
+rect_min_size = Vector2( 500, 500 )
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Muestra/VBoxContainer"]
+margin_top = 596.0
+margin_right = 500.0
+margin_bottom = 724.0
+
+[node name="VSeparator" type="VSeparator" parent="Muestra/VBoxContainer/HBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 30.0
+margin_bottom = 128.0
+custom_constants/separation = 30
+
+[node name="BotonAnterior" type="Button" parent="Muestra/VBoxContainer/HBoxContainer"]
+margin_left = 34.0
+margin_right = 162.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 128, 128 )
+custom_styles/pressed = SubResource( 10 )
+custom_styles/disabled = SubResource( 11 )
+custom_styles/normal = SubResource( 12 )
+disabled = true
+icon = ExtResource( 10 )
+expand_icon = true
+
+[node name="VSeparator2" type="VSeparator" parent="Muestra/VBoxContainer/HBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 166.0
+margin_right = 341.0
+margin_bottom = 128.0
+custom_constants/separation = 175
+
+[node name="BotonSiguiente" type="Button" parent="Muestra/VBoxContainer/HBoxContainer"]
+margin_left = 345.0
+margin_right = 473.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 128, 128 )
+custom_styles/pressed = SubResource( 10 )
+custom_styles/disabled = SubResource( 11 )
+custom_styles/normal = SubResource( 12 )
+disabled = true
+icon = ExtResource( 13 )
+expand_icon = true
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonHabichuela" to="." method="_on_BotonHabichuela_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonAlverja" to="." method="_on_BotonAlverja_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonCalabazas" to="." method="_on_BotonCalabazas_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonCebolla" to="." method="_on_BotonCebolla_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonColes" to="." method="_on_BotonColes_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonPimenton" to="." method="_on_BotonPimenton_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonTomate" to="." method="_on_BotonTomate_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonPepinos" to="." method="_on_BotonPepinos_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonHojas" to="." method="_on_BotonHojas_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonMaiz" to="." method="_on_BotonMaiz_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonChampis" to="." method="_on_BotonChampis_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonGuatila" to="." method="_on_BotonGuatila_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonBerengena" to="." method="_on_BotonBerengena_button_up"]
+[connection signal="button_up" from="VBoxContainer/BotonVolver" to="." method="_on_BotonVolver_button_up"]
+[connection signal="button_up" from="Muestra/VBoxContainer/HBoxContainer/BotonAnterior" to="." method="_on_BotonAnterior_button_up"]
+[connection signal="button_up" from="Muestra/VBoxContainer/HBoxContainer/BotonSiguiente" to="." method="_on_BotonSiguiente_button_up"]
