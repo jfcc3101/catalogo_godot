@@ -13,7 +13,7 @@ func _ready():
 
 
 func _notification(what):
-	if (what == MainLoop.NOTIFICATION_WM_QUIT_REQUEST):
+	if (what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST):
 		get_tree().change_scene("res://Escenas/MainScreen.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

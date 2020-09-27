@@ -1,26 +1,25 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Fuentes/PressStart2P-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_res.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_res_pressed.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_cerdo_pressed.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_cerdo.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_pollo.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_pollo_pressed.png" type="Texture" id=7]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_embutidos_pressed.png" type="Texture" id=8]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_embutidos.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/logo_back.png" type="Texture" id=10]
 [ext_resource path="res://Scripts/Carnes.gd" type="Script" id=11]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/fotos/res_molida.jpg" type="Texture" id=12]
 [ext_resource path="res://Sprites/logo_fw.png" type="Texture" id=13]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_pescado.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/logo_pescado_pressed.png" type="Texture" id=15]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=13]
+size = 18
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=14]
 font_data = ExtResource( 1 )
 
 [sub_resource type="StyleBoxFlat" id=3]
@@ -129,116 +128,253 @@ rect_min_size = Vector2( 0, 550 )
 size_flags_vertical = 3
 scroll_horizontal_enabled = false
 
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
 margin_right = 388.0
-margin_bottom = 584.0
-columns = 2
+margin_bottom = 976.0
 
-[node name="BotonRes" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+[node name="HBoxRes" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteRes" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxRes"]
 margin_right = 192.0
 margin_bottom = 192.0
 rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 2 )
-texture_pressed = ExtResource( 3 )
+texture = ExtResource( 2 )
 expand = true
-stretch_mode = 5
 
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonRes"]
-margin_right = 40.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 192, 0 )
-custom_fonts/font = SubResource( 2 )
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxRes"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxRes/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxRes/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 13 )
 text = "RES"
 align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="BotonCerdo" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxRes/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonRes" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxRes/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 14 )
+text = "VER"
+
+[node name="HBoxCerdo" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 196.0
+margin_right = 388.0
+margin_bottom = 388.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteCerdo" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCerdo"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 5 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCerdo"]
 margin_left = 196.0
 margin_right = 388.0
 margin_bottom = 192.0
 rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 4 )
-expand = true
-stretch_mode = 5
 
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonCerdo"]
-margin_right = 40.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 192, 0 )
-custom_fonts/font = SubResource( 2 )
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCerdo/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCerdo/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 13 )
 text = "CERDO"
 align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="BotonPollo" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_top = 196.0
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCerdo/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
 margin_right = 192.0
-margin_bottom = 388.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 6 )
-texture_pressed = ExtResource( 7 )
-expand = true
-stretch_mode = 5
+margin_bottom = 131.0
+custom_constants/separation = 65
 
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonPollo"]
-margin_right = 40.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 192, 0 )
-custom_fonts/font = SubResource( 2 )
+[node name="BotonCerdo" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCerdo/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 14 )
+text = "VER"
+
+[node name="HBoxPollo" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 392.0
+margin_right = 388.0
+margin_bottom = 584.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpritePollo" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPollo"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 6 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPollo"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPollo/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPollo/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 13 )
 text = "POLLO"
 align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="BotonEmbutidos" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_left = 196.0
-margin_top = 196.0
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPollo/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonPollo" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPollo/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 14 )
+text = "VER"
+
+[node name="HBoxEmbutidos" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 588.0
 margin_right = 388.0
-margin_bottom = 388.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 9 )
-texture_pressed = ExtResource( 8 )
-expand = true
-stretch_mode = 5
+margin_bottom = 780.0
+rect_min_size = Vector2( 0, 192 )
 
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonEmbutidos"]
-margin_right = 40.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 192, 0 )
-custom_fonts/font = SubResource( 2 )
+[node name="SpriteEmbutidos" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxEmbutidos"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 9 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxEmbutidos"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxEmbutidos/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxEmbutidos/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 13 )
 text = "EMBUTIDOS"
 align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="BotonPescado" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_top = 392.0
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxEmbutidos/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
 margin_right = 192.0
-margin_bottom = 584.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonEmbutidos" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxEmbutidos/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 14 )
+text = "VER"
+
+[node name="HBoxPescado" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 784.0
+margin_right = 388.0
+margin_bottom = 976.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpritePescado" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPescado"]
+margin_right = 192.0
+margin_bottom = 192.0
 rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 14 )
-texture_pressed = ExtResource( 15 )
+texture = ExtResource( 14 )
 expand = true
-stretch_mode = 5
 
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonPescado"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPescado"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPescado/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
 margin_right = 192.0
-margin_bottom = 16.0
-rect_min_size = Vector2( 192, 0 )
-custom_fonts/font = SubResource( 2 )
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPescado/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 13 )
 text = "PESCADO"
 align = 1
-uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPescado/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonPescado" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPescado/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 14 )
+text = "VER"
 
 [node name="BotonVolver" type="Button" parent="VBoxContainer"]
 margin_top = 675.0
@@ -253,7 +389,6 @@ text = "VOLVER"
 icon = ExtResource( 10 )
 
 [node name="Muestra" type="WindowDialog" parent="."]
-visible = true
 margin_left = 43.0
 margin_top = 120.0
 margin_right = 543.0
@@ -350,11 +485,11 @@ custom_styles/normal = SubResource( 12 )
 disabled = true
 icon = ExtResource( 13 )
 expand_icon = true
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonRes" to="." method="_on_BotonRes_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonCerdo" to="." method="_on_BotonCerdo_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonPollo" to="." method="_on_BotonPollo_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonEmbutidos" to="." method="_on_BotonEmbutidos_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonPescado" to="." method="_on_BotonPescado_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxRes/VBoxContainer/BotonRes" to="." method="_on_BotonRes_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCerdo/VBoxContainer/BotonCerdo" to="." method="_on_BotonCerdo_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPollo/VBoxContainer/BotonPollo" to="." method="_on_BotonPollo_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxEmbutidos/VBoxContainer/BotonEmbutidos" to="." method="_on_BotonEmbutidos_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPescado/VBoxContainer/BotonPescado" to="." method="_on_BotonPescado_button_up"]
 [connection signal="button_up" from="VBoxContainer/BotonVolver" to="." method="_on_BotonVolver_button_up"]
 [connection signal="button_up" from="Muestra/VBoxContainer/HBoxContainer/BotonAnterior" to="." method="_on_BotonAnterior_button_up"]
 [connection signal="button_up" from="Muestra/VBoxContainer/HBoxContainer/BotonSiguiente" to="." method="_on_BotonSiguiente_button_up"]

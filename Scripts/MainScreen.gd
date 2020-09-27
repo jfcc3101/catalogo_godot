@@ -13,9 +13,6 @@ func _ready():
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 
 
 func _on_BotonComida_button_up():
@@ -35,7 +32,7 @@ func cargar_productos():
 		return
 
 	Global.dict_productos = parse_json(file.get_line())
-	print(Global.dict_productos)
+	#print(Global.dict_productos)
 	file.close()
 	pass
 	
@@ -51,7 +48,7 @@ func cargar_imagenes():
 		return
 
 	Global.dict_imagenes = parse_json(file.get_line())
-	print(Global.dict_imagenes)
+	#print(Global.dict_imagenes)
 	file.close()
 	pass
 

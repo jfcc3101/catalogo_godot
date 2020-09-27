@@ -12,7 +12,7 @@ func _ready():
 	pass # Replace with function body.
 
 func _notification(what):
-	if (what == MainLoop.NOTIFICATION_WM_QUIT_REQUEST):
+	if (what == MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST):
 		if $Muestra.visible:
 			$Muestra.visible = false
 		else:

@@ -30,6 +30,7 @@ window/size/width=576
 window/size/height=1024
 window/size/test_width=288
 window/size/test_height=512
+window/energy_saving/keep_screen_on=false
 window/handheld/orientation="portrait"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"

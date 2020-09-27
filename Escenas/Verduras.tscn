@@ -1,35 +1,22 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Fuentes/PressStart2P-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_habichuela.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_coles.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_alverja.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_calabazas.png" type="Texture" id=5]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_habichuela_pressed.png" type="Texture" id=6]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_alverja_pressed.png" type="Texture" id=7]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_cebollas.png" type="Texture" id=8]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_coles_pressed.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/logo_back.png" type="Texture" id=10]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_pimenton.png" type="Texture" id=11]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/fotos/res_molida.jpg" type="Texture" id=12]
 [ext_resource path="res://Sprites/logo_fw.png" type="Texture" id=13]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_calabazas_pressed.png" type="Texture" id=14]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_pimenton_pressed.png" type="Texture" id=15]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_cebollas_pressed.png" type="Texture" id=16]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_tomate_pressed.png" type="Texture" id=17]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_tomate.png" type="Texture" id=18]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_pepino.png" type="Texture" id=19]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_pepino_pressed.png" type="Texture" id=20]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_hojas.png" type="Texture" id=21]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_hojas_pressed.png" type="Texture" id=22]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_maiz_pressed.png" type="Texture" id=23]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_maiz.png" type="Texture" id=24]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_champinon_pressed.png" type="Texture" id=25]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_champinon.png" type="Texture" id=26]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_guatila_pressed.png" type="Texture" id=27]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_guatila.png" type="Texture" id=28]
 [ext_resource path="res://Scripts/Verduras.gd" type="Script" id=29]
-[ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_berengena_pressed.png" type="Texture" id=30]
 [ext_resource path="res://Sprites/Menu_Comida/Menu_Verduras/logo_berengena.png" type="Texture" id=31]
 
 [sub_resource type="DynamicFont" id=1]
@@ -37,33 +24,37 @@ size = 50
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
+size = 18
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=3]
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=4]
+[sub_resource type="StyleBoxFlat" id=6]
 bg_color = Color( 0, 0, 0, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=5]
+[sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 0.396078, 0.396078, 0.396078, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=8]
 size = 25
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=7]
+[sub_resource type="StyleBoxFlat" id=9]
 bg_color = Color( 0.596078, 0.631373, 1, 1 )
 corner_radius_top_left = 8
 corner_radius_top_right = 8
@@ -72,28 +63,28 @@ corner_radius_bottom_left = 8
 shadow_size = 5
 shadow_offset = Vector2( 5, 5 )
 
-[sub_resource type="DynamicFont" id=8]
+[sub_resource type="DynamicFont" id=10]
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=9]
+[sub_resource type="DynamicFont" id=11]
 size = 20
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=10]
+[sub_resource type="StyleBoxFlat" id=12]
 bg_color = Color( 0, 0, 0, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id=11]
+[sub_resource type="StyleBoxFlat" id=13]
 draw_center = false
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
-[sub_resource type="StyleBoxFlat" id=12]
+[sub_resource type="StyleBoxFlat" id=14]
 bg_color = Color( 0.396078, 0.396078, 0.396078, 1 )
 corner_radius_top_left = 10
 corner_radius_top_right = 10
@@ -106,7 +97,7 @@ script = ExtResource( 29 )
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 576.0
 margin_bottom = 1024.0
-color = Color( 0.964706, 0.270588, 0.270588, 1 )
+color = Color( 0.760784, 0.996078, 0.545098, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -145,308 +136,681 @@ rect_min_size = Vector2( 0, 550 )
 size_flags_vertical = 3
 scroll_horizontal_enabled = false
 
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer/ScrollContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
 margin_right = 388.0
-margin_bottom = 1368.0
-columns = 2
+margin_bottom = 2544.0
 
-[node name="BotonHabichuela" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+[node name="HBoxHabichuela" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteHabichuela" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHabichuela"]
 margin_right = 192.0
 margin_bottom = 192.0
 rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 2 )
-texture_pressed = ExtResource( 6 )
+texture = ExtResource( 2 )
 expand = true
-stretch_mode = 5
 
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonHabichuela"]
-margin_right = 40.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 192, 0 )
-custom_fonts/font = SubResource( 2 )
-text = "HABICHUELA"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="BotonAlverja" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHabichuela"]
 margin_left = 196.0
 margin_right = 388.0
 margin_bottom = 192.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 4 )
-texture_pressed = ExtResource( 7 )
-expand = true
-stretch_mode = 5
-
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonAlverja"]
-margin_right = 40.0
-margin_bottom = 14.0
 rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHabichuela/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHabichuela/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
 custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HABICHUELA"
+align = 1
+uppercase = true
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHabichuela/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonHabichuela" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHabichuela/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxAlverja" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 196.0
+margin_right = 388.0
+margin_bottom = 388.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteAlverja" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxAlverja"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 4 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxAlverja"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxAlverja/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxAlverja/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "ALVERJA"
 align = 1
 uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="BotonCalabazas" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_top = 196.0
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxAlverja/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
 margin_right = 192.0
-margin_bottom = 388.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 5 )
-texture_pressed = ExtResource( 14 )
-expand = true
-stretch_mode = 5
+margin_bottom = 131.0
+custom_constants/separation = 65
 
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonCalabazas"]
-margin_right = 40.0
-margin_bottom = 14.0
+[node name="BotonAlverja" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxAlverja/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxCalabaza" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 392.0
+margin_right = 388.0
+margin_bottom = 584.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteCalabaza" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCalabaza"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 5 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCalabaza"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
 rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCalabaza/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCalabaza/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
 custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "CALABAZAS"
 align = 1
 uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="BotonCebolla" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_left = 196.0
-margin_top = 196.0
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCalabaza/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonCalabazas" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCalabaza/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxCebolla" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 588.0
 margin_right = 388.0
-margin_bottom = 388.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 8 )
-texture_pressed = ExtResource( 16 )
-expand = true
-stretch_mode = 5
+margin_bottom = 780.0
+rect_min_size = Vector2( 0, 192 )
 
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonCebolla"]
-margin_right = 40.0
-margin_bottom = 14.0
+[node name="SpriteCebolla" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCebolla"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 8 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCebolla"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
 rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCebolla/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCebolla/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
 custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "CEBOLLA"
 align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+uppercase = true
 
-[node name="BotonColes" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_top = 392.0
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCebolla/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
 margin_right = 192.0
-margin_bottom = 584.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonCebolla" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCebolla/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxColes" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 784.0
+margin_right = 388.0
+margin_bottom = 976.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteColes" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxColes"]
+margin_right = 192.0
+margin_bottom = 192.0
 rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 3 )
-texture_pressed = ExtResource( 9 )
+texture = ExtResource( 3 )
 expand = true
-stretch_mode = 5
 
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonColes"]
-margin_right = 192.0
-margin_bottom = 16.0
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxColes"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
 rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxColes/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxColes/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
 custom_fonts/font = SubResource( 2 )
-text = "Coles"
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "COLES"
 align = 1
 uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="BotonPimenton" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_left = 196.0
-margin_top = 392.0
-margin_right = 388.0
-margin_bottom = 584.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 11 )
-texture_pressed = ExtResource( 15 )
-expand = true
-stretch_mode = 5
-
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonPimenton"]
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxColes/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
 margin_right = 192.0
-margin_bottom = 16.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonColes" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxColes/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxPimenton" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 980.0
+margin_right = 388.0
+margin_bottom = 1172.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpritePimenton" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPimenton"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 11 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPimenton"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
 rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPimenton/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPimenton/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
 custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Pimentón"
 align = 1
 uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="BotonTomate" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_top = 588.0
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPimenton/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
 margin_right = 192.0
-margin_bottom = 780.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 18 )
-texture_pressed = ExtResource( 17 )
-expand = true
-stretch_mode = 5
+margin_bottom = 131.0
+custom_constants/separation = 65
 
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonTomate"]
-margin_right = 192.0
-margin_bottom = 16.0
-rect_min_size = Vector2( 192, 0 )
-custom_fonts/font = SubResource( 2 )
-text = "Tomate"
-align = 1
-uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="BotonPimenton" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPimenton/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
 
-[node name="BotonPepinos" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_left = 196.0
-margin_top = 588.0
-margin_right = 388.0
-margin_bottom = 780.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 19 )
-texture_pressed = ExtResource( 20 )
-expand = true
-stretch_mode = 5
-
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonPepinos"]
-margin_right = 192.0
-margin_bottom = 16.0
-rect_min_size = Vector2( 192, 0 )
-custom_fonts/font = SubResource( 2 )
-text = "Pepinos"
-align = 1
-uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="BotonHojas" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_top = 784.0
-margin_right = 192.0
-margin_bottom = 976.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 21 )
-texture_pressed = ExtResource( 22 )
-expand = true
-stretch_mode = 5
-
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonHojas"]
-margin_right = 192.0
-margin_bottom = 16.0
-rect_min_size = Vector2( 192, 0 )
-custom_fonts/font = SubResource( 2 )
-text = "Hojas"
-align = 1
-uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="BotonMaiz" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_left = 196.0
-margin_top = 784.0
-margin_right = 388.0
-margin_bottom = 976.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 24 )
-texture_pressed = ExtResource( 23 )
-expand = true
-stretch_mode = 5
-
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonMaiz"]
-margin_right = 192.0
-margin_bottom = 16.0
-rect_min_size = Vector2( 192, 0 )
-custom_fonts/font = SubResource( 2 )
-text = "Maíz"
-align = 1
-uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="BotonChampis" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_top = 980.0
-margin_right = 192.0
-margin_bottom = 1172.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 26 )
-texture_pressed = ExtResource( 25 )
-expand = true
-stretch_mode = 5
-
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonChampis"]
-margin_right = 192.0
-margin_bottom = 16.0
-rect_min_size = Vector2( 192, 0 )
-custom_fonts/font = SubResource( 2 )
-text = "Champiñón"
-align = 1
-uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="BotonGuatila" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
-margin_left = 196.0
-margin_top = 980.0
-margin_right = 388.0
-margin_bottom = 1172.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 28 )
-texture_pressed = ExtResource( 27 )
-expand = true
-stretch_mode = 5
-
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonGuatila"]
-margin_right = 192.0
-margin_bottom = 16.0
-rect_min_size = Vector2( 192, 0 )
-custom_fonts/font = SubResource( 2 )
-text = "Guatila"
-align = 1
-uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="BotonBerengena" type="TextureButton" parent="VBoxContainer/ScrollContainer/GridContainer"]
+[node name="HBoxTomate" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
 margin_top = 1176.0
-margin_right = 192.0
+margin_right = 388.0
 margin_bottom = 1368.0
-rect_min_size = Vector2( 192, 192 )
-texture_normal = ExtResource( 31 )
-texture_pressed = ExtResource( 30 )
-expand = true
-stretch_mode = 5
+rect_min_size = Vector2( 0, 192 )
 
-[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/GridContainer/BotonBerengena"]
+[node name="SpriteTomate" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxTomate"]
 margin_right = 192.0
-margin_bottom = 16.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 18 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxTomate"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
 rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxTomate/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxTomate/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
 custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "TOMATE"
+align = 1
+uppercase = true
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxTomate/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonTomate" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxTomate/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxPepino" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 1372.0
+margin_right = 388.0
+margin_bottom = 1564.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpritePepino" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPepino"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 19 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPepino"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPepino/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPepino/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "PEPINO"
+align = 1
+uppercase = true
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPepino/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonPepinos" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPepino/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxHojas" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 1568.0
+margin_right = 388.0
+margin_bottom = 1760.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteHojas" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHojas"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 21 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHojas"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHojas/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHojas/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "HOJAS"
+align = 1
+uppercase = true
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHojas/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonHojas" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHojas/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxMaiz" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 1764.0
+margin_right = 388.0
+margin_bottom = 1956.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteMaiz" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxMaiz"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 24 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxMaiz"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxMaiz/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxMaiz/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "MAÍZ"
+align = 1
+uppercase = true
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxMaiz/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonMaiz" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxMaiz/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxChampis" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 1960.0
+margin_right = 388.0
+margin_bottom = 2152.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteChampis" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxChampis"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 26 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxChampis"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxChampis/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxChampis/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "CHAMPIÑÓN"
+align = 1
+uppercase = true
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxChampis/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonChampis" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxChampis/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxGuatila" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2156.0
+margin_right = 388.0
+margin_bottom = 2348.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteGuatila" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxGuatila"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 28 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxGuatila"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxGuatila/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxGuatila/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "GUATILA"
+align = 1
+uppercase = true
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxGuatila/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonGuatila" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxGuatila/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxBerengena" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 2352.0
+margin_right = 388.0
+margin_bottom = 2544.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteBerengena" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBerengena"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 31 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBerengena"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 0 )
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBerengena/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBerengena/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "BERENGENA"
 align = 1
 uppercase = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBerengena/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonBerengena" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBerengena/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
 
 [node name="BotonVolver" type="Button" parent="VBoxContainer"]
 margin_top = 675.0
 margin_right = 403.0
 margin_bottom = 739.0
 rect_min_size = Vector2( 0, 64 )
-custom_styles/hover = SubResource( 3 )
-custom_styles/pressed = SubResource( 4 )
-custom_styles/normal = SubResource( 5 )
-custom_fonts/font = SubResource( 6 )
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
 text = "VOLVER"
 icon = ExtResource( 10 )
 
@@ -456,8 +820,8 @@ margin_top = 120.0
 margin_right = 543.0
 margin_bottom = 820.0
 rect_min_size = Vector2( 500, 800 )
-custom_styles/panel = SubResource( 7 )
-custom_fonts/title_font = SubResource( 8 )
+custom_styles/panel = SubResource( 9 )
+custom_fonts/title_font = SubResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -485,7 +849,7 @@ modulate = Color( 0, 0, 0, 1 )
 margin_top = 34.0
 margin_right = 500.0
 margin_bottom = 54.0
-custom_fonts/font = SubResource( 9 )
+custom_fonts/font = SubResource( 11 )
 text = "VARIANTE"
 align = 1
 uppercase = true
@@ -522,9 +886,9 @@ margin_left = 34.0
 margin_right = 162.0
 margin_bottom = 128.0
 rect_min_size = Vector2( 128, 128 )
-custom_styles/pressed = SubResource( 10 )
-custom_styles/disabled = SubResource( 11 )
-custom_styles/normal = SubResource( 12 )
+custom_styles/pressed = SubResource( 12 )
+custom_styles/disabled = SubResource( 13 )
+custom_styles/normal = SubResource( 14 )
 disabled = true
 icon = ExtResource( 10 )
 expand_icon = true
@@ -541,25 +905,25 @@ margin_left = 345.0
 margin_right = 473.0
 margin_bottom = 128.0
 rect_min_size = Vector2( 128, 128 )
-custom_styles/pressed = SubResource( 10 )
-custom_styles/disabled = SubResource( 11 )
-custom_styles/normal = SubResource( 12 )
+custom_styles/pressed = SubResource( 12 )
+custom_styles/disabled = SubResource( 13 )
+custom_styles/normal = SubResource( 14 )
 disabled = true
 icon = ExtResource( 13 )
 expand_icon = true
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonHabichuela" to="." method="_on_BotonHabichuela_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonAlverja" to="." method="_on_BotonAlverja_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonCalabazas" to="." method="_on_BotonCalabazas_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonCebolla" to="." method="_on_BotonCebolla_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonColes" to="." method="_on_BotonColes_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonPimenton" to="." method="_on_BotonPimenton_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonTomate" to="." method="_on_BotonTomate_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonPepinos" to="." method="_on_BotonPepinos_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonHojas" to="." method="_on_BotonHojas_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonMaiz" to="." method="_on_BotonMaiz_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonChampis" to="." method="_on_BotonChampis_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonGuatila" to="." method="_on_BotonGuatila_button_up"]
-[connection signal="button_up" from="VBoxContainer/ScrollContainer/GridContainer/BotonBerengena" to="." method="_on_BotonBerengena_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHabichuela/VBoxContainer/BotonHabichuela" to="." method="_on_BotonHabichuela_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxAlverja/VBoxContainer/BotonAlverja" to="." method="_on_BotonAlverja_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCalabaza/VBoxContainer/BotonCalabazas" to="." method="_on_BotonCalabazas_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCebolla/VBoxContainer/BotonCebolla" to="." method="_on_BotonCebolla_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxColes/VBoxContainer/BotonColes" to="." method="_on_BotonColes_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPimenton/VBoxContainer/BotonPimenton" to="." method="_on_BotonPimenton_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxTomate/VBoxContainer/BotonTomate" to="." method="_on_BotonTomate_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPepino/VBoxContainer/BotonPepinos" to="." method="_on_BotonPepinos_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxHojas/VBoxContainer/BotonHojas" to="." method="_on_BotonHojas_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxMaiz/VBoxContainer/BotonMaiz" to="." method="_on_BotonMaiz_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxChampis/VBoxContainer/BotonChampis" to="." method="_on_BotonChampis_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxGuatila/VBoxContainer/BotonGuatila" to="." method="_on_BotonGuatila_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBerengena/VBoxContainer/BotonBerengena" to="." method="_on_BotonBerengena_button_up"]
 [connection signal="button_up" from="VBoxContainer/BotonVolver" to="." method="_on_BotonVolver_button_up"]
 [connection signal="button_up" from="Muestra/VBoxContainer/HBoxContainer/BotonAnterior" to="." method="_on_BotonAnterior_button_up"]
 [connection signal="button_up" from="Muestra/VBoxContainer/HBoxContainer/BotonSiguiente" to="." method="_on_BotonSiguiente_button_up"]
