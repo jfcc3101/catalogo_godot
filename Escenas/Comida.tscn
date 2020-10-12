@@ -187,4 +187,5 @@ text = "VOLVER"
 icon = ExtResource( 10 )
 [connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/BotonCarnes" to="." method="_on_BotonCarnes_button_up"]
 [connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/BotonVerduras" to="." method="_on_BotonVerduras_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/BotonFrutas" to="." method="_on_BotonFrutas_button_up"]
 [connection signal="button_up" from="VBoxContainer/BotonVolver" to="." method="_on_BotonVolver_button_up"]

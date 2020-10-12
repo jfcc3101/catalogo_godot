@@ -34,3 +34,8 @@ func _on_BotonCarnes_button_up():
 func _on_BotonVerduras_button_up():
 	get_tree().change_scene("res://Escenas/Verduras.tscn")
 	pass # Replace with function body.
+
+
+func _on_BotonFrutas_button_up():
+	get_tree().change_scene("res://Escenas/Frutas.tscn")
+	pass # Replace with function body.
