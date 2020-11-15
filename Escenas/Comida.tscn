@@ -190,4 +190,5 @@ icon = ExtResource( 10 )
 [connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/BotonFrutas" to="." method="_on_BotonFrutas_button_up"]
 [connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/BotonLacteos" to="." method="_on_BotonLacteos_button_up"]
 [connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/BotonTuberculos" to="." method="_on_BotonTuberculos_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/BotonCondimientos" to="." method="_on_BotonCondimientos_button_up"]
 [connection signal="button_up" from="VBoxContainer/BotonVolver" to="." method="_on_BotonVolver_button_up"]
