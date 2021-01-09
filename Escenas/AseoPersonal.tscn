@@ -1,0 +1,715 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://Fuentes/PressStart2P-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Sprites/Menu_Aseo_Pers/logo_cabello.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Menu_Aseo_Pers/logo_jabon.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Menu_Aseo_Pers/logo_oral.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Menu_Aseo_Pers/logo_crema.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Menu_Aseo_Pers/logo_intimo.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Menu_Aseo_Pers/logo_pies.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Menu_Aseo_Pers/logo_papel.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Menu_Aseo_Pers/logo_belleza.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/logo_back.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Menu_Aseo_Pers/logo_salud.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Menu_Comida/Menu_Carne/fotos/res_molida.jpg" type="Texture" id=12]
+[ext_resource path="res://Sprites/logo_fw.png" type="Texture" id=13]
+[ext_resource path="res://Scripts/AseoPersonal.gd" type="Script" id=14]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 18
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.396078, 0.396078, 0.396078, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=7]
+size = 25
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.596078, 0.631373, 1, 1 )
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 5
+shadow_offset = Vector2( 5, 5 )
+
+[sub_resource type="DynamicFont" id=9]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=12]
+draw_center = false
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.396078, 0.396078, 0.396078, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="AseoPersonal" type="Node2D"]
+script = ExtResource( 14 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 576.0
+margin_bottom = 1024.0
+color = Color( 0.12549, 0.623529, 0.952941, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 86.5
+margin_top = 120.0
+margin_right = 489.5
+margin_bottom = 160.0
+custom_constants/separation = 15
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 403.0
+margin_bottom = 103.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "ASEO
+PERSONAL"
+align = 1
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 118.0
+margin_right = 403.0
+margin_bottom = 148.0
+custom_constants/separation = 30
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+margin_top = 163.0
+margin_right = 403.0
+margin_bottom = 713.0
+rect_min_size = Vector2( 0, 550 )
+size_flags_vertical = 3
+scroll_horizontal_enabled = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer"]
+margin_right = 388.0
+margin_bottom = 1760.0
+
+[node name="HBoxJabon" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteJabon" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxJabon"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 3 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxJabon"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxJabon/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxJabon/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+text = "JAbón"
+align = 1
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxJabon/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonJabon" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxJabon/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxCabello" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 196.0
+margin_right = 388.0
+margin_bottom = 388.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteCabello" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCabello"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 2 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCabello"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCabello/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCabello/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+text = "Cabello"
+align = 1
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCabello/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonCabello" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCabello/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxCremas" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 392.0
+margin_right = 388.0
+margin_bottom = 584.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteCremas" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCremas"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 5 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCremas"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCremas/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCremas/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+text = "Crema"
+align = 1
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCremas/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonCremas" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCremas/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxOral" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 588.0
+margin_right = 388.0
+margin_bottom = 780.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteOral" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxOral"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 4 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxOral"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxOral/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxOral/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 83.0
+custom_fonts/font = SubResource( 2 )
+text = "Cuidado
+Oral"
+align = 1
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxOral/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 87.0
+margin_right = 192.0
+margin_bottom = 152.0
+custom_constants/separation = 65
+
+[node name="BotonOral" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxOral/VBoxContainer"]
+margin_left = 66.0
+margin_top = 156.0
+margin_right = 126.0
+margin_bottom = 178.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxPapel" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 784.0
+margin_right = 388.0
+margin_bottom = 976.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpritePapel" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPapel"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 8 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPapel"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPapel/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPapel/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+text = "Papel"
+align = 1
+clip_text = true
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPapel/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonPapel" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPapel/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxIntimos" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 980.0
+margin_right = 388.0
+margin_bottom = 1172.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteIntimos" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxIntimos"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 6 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxIntimos"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxIntimos/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxIntimos/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+text = "Íntimos"
+align = 1
+clip_text = true
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxIntimos/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonIntimos" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxIntimos/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxPies" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 1176.0
+margin_right = 388.0
+margin_bottom = 1368.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpritePies" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPies"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 7 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPies"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPies/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPies/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+text = "Pies"
+align = 1
+clip_text = true
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPies/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonPies" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPies/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxBelleza" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 1372.0
+margin_right = 388.0
+margin_bottom = 1564.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteBelleza" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBelleza"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 9 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBelleza"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBelleza/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBelleza/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+text = "Belleza"
+align = 1
+clip_text = true
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBelleza/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonBelleza" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBelleza/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="HBoxSalud" type="HBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_top = 1568.0
+margin_right = 388.0
+margin_bottom = 1760.0
+rect_min_size = Vector2( 0, 192 )
+
+[node name="SpriteSalud" type="TextureRect" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxSalud"]
+margin_right = 192.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+texture = ExtResource( 11 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxSalud"]
+margin_left = 196.0
+margin_right = 388.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 192, 192 )
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxSalud/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 192.0
+margin_bottom = 40.0
+custom_constants/separation = 40
+
+[node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxSalud/VBoxContainer"]
+margin_top = 44.0
+margin_right = 192.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 2 )
+text = "Salud"
+align = 1
+clip_text = true
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxSalud/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 66.0
+margin_right = 192.0
+margin_bottom = 131.0
+custom_constants/separation = 65
+
+[node name="BotonSalud" type="Button" parent="VBoxContainer/ScrollContainer/VBoxContainer/HBoxSalud/VBoxContainer"]
+margin_left = 66.0
+margin_top = 135.0
+margin_right = 126.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 3 )
+text = "VER"
+
+[node name="BotonVolver" type="Button" parent="VBoxContainer"]
+margin_top = 728.0
+margin_right = 403.0
+margin_bottom = 792.0
+rect_min_size = Vector2( 0, 64 )
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
+custom_fonts/font = SubResource( 7 )
+text = "VOLVER"
+icon = ExtResource( 10 )
+
+[node name="Muestra" type="WindowDialog" parent="."]
+margin_left = 43.0
+margin_top = 120.0
+margin_right = 543.0
+margin_bottom = 820.0
+rect_min_size = Vector2( 500, 800 )
+custom_styles/panel = SubResource( 8 )
+custom_fonts/title_font = SubResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Muestra"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 3.05176e-05
+margin_bottom = 6.10352e-05
+rect_min_size = Vector2( 500, 800 )
+rect_clip_content = true
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="Muestra/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 500.0
+margin_bottom = 30.0
+custom_constants/separation = 30
+
+[node name="Label" type="Label" parent="Muestra/VBoxContainer"]
+modulate = Color( 0, 0, 0, 1 )
+margin_top = 34.0
+margin_right = 500.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 10 )
+text = "VARIANTE"
+align = 1
+uppercase = true
+
+[node name="HSeparator2" type="HSeparator" parent="Muestra/VBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_top = 58.0
+margin_right = 500.0
+margin_bottom = 88.0
+custom_constants/separation = 30
+
+[node name="TextureRect" type="TextureRect" parent="Muestra/VBoxContainer"]
+margin_top = 92.0
+margin_right = 500.0
+margin_bottom = 592.0
+rect_min_size = Vector2( 500, 500 )
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Muestra/VBoxContainer"]
+margin_top = 596.0
+margin_right = 500.0
+margin_bottom = 724.0
+
+[node name="VSeparator" type="VSeparator" parent="Muestra/VBoxContainer/HBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 30.0
+margin_bottom = 128.0
+custom_constants/separation = 30
+
+[node name="BotonAnterior" type="Button" parent="Muestra/VBoxContainer/HBoxContainer"]
+margin_left = 34.0
+margin_right = 162.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 128, 128 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/disabled = SubResource( 12 )
+custom_styles/normal = SubResource( 13 )
+disabled = true
+icon = ExtResource( 10 )
+expand_icon = true
+
+[node name="VSeparator2" type="VSeparator" parent="Muestra/VBoxContainer/HBoxContainer"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 166.0
+margin_right = 341.0
+margin_bottom = 128.0
+custom_constants/separation = 175
+
+[node name="BotonSiguiente" type="Button" parent="Muestra/VBoxContainer/HBoxContainer"]
+margin_left = 345.0
+margin_right = 473.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 128, 128 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/disabled = SubResource( 12 )
+custom_styles/normal = SubResource( 13 )
+disabled = true
+icon = ExtResource( 13 )
+expand_icon = true
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxJabon/VBoxContainer/BotonJabon" to="." method="_on_BotonJabon_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCabello/VBoxContainer/BotonCabello" to="." method="_on_BotonCabello_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxCremas/VBoxContainer/BotonCremas" to="." method="_on_BotonCremas_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxOral/VBoxContainer/BotonOral" to="." method="_on_BotonOral_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPapel/VBoxContainer/BotonPapel" to="." method="_on_BotonPapel_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxIntimos/VBoxContainer/BotonIntimos" to="." method="_on_BotonIntimos_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxPies/VBoxContainer/BotonPies" to="." method="_on_BotonPies_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxBelleza/VBoxContainer/BotonBelleza" to="." method="_on_BotonBelleza_button_up"]
+[connection signal="button_up" from="VBoxContainer/ScrollContainer/VBoxContainer/HBoxSalud/VBoxContainer/BotonSalud" to="." method="_on_BotonSalud_button_up"]
+[connection signal="button_up" from="VBoxContainer/BotonVolver" to="." method="_on_BotonVolver_button_up"]
+[connection signal="button_up" from="Muestra/VBoxContainer/HBoxContainer/BotonAnterior" to="." method="_on_BotonAnterior_button_up"]
+[connection signal="button_up" from="Muestra/VBoxContainer/HBoxContainer/BotonSiguiente" to="." method="_on_BotonSiguiente_button_up"]
