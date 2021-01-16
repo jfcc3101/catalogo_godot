@@ -23,6 +23,10 @@ func _on_BotonAseoPersonal_button_up():
 	get_tree().change_scene("res://Escenas/AseoPersonal.tscn")
 	pass # Replace with function body.
 
+func _on_BotonAseoHogar_button_up():
+	get_tree().change_scene("res://Escenas/AseoHogar.tscn")
+	pass # Replace with function body.
+
 
 func cargar_productos():
 	#print("leyendo records")
@@ -60,6 +64,3 @@ func cargar_datos():
 	cargar_productos()
 	cargar_imagenes()
 	pass
-
-
-

@@ -130,7 +130,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BotonAseoPersonal2" type="Button" parent="VBoxContainer/Botones"]
+[node name="BotonAseoHogar" type="Button" parent="VBoxContainer/Botones"]
 margin_top = 148.0
 margin_right = 403.0
 margin_bottom = 212.0
@@ -145,3 +145,4 @@ __meta__ = {
 }
 [connection signal="button_up" from="VBoxContainer/Botones/BotonComida" to="." method="_on_BotonComida_button_up"]
 [connection signal="button_up" from="VBoxContainer/Botones/BotonAseoPersonal" to="." method="_on_BotonAseoPersonal_button_up"]
+[connection signal="button_up" from="VBoxContainer/Botones/BotonAseoHogar" to="." method="_on_BotonAseoHogar_button_up"]
